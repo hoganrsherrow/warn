@@ -22,7 +22,8 @@
       "CLOSURE_LAYOFF_DATE",
       "COMPANY",
       "COUNTY",
-      "DATE_NOTICE_POSTED"
+      "DATE_NOTICE_POSTED",
+      "LAYOFF_CLOSURE_DATE"
     ]
   },
   "pipeline":[
