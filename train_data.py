@@ -164,9 +164,151 @@ TRAIN_DATA = [
                 (41, 66, "COMPANY"),
                 (77, 83, "COUNTY"),
                 (104, 107, "AFFECTED_WORKERS"),
-                (145, 162, "LAYOFF_CLOSURE_DATE"),
-                (184, 201, "LAYOFF_CLOSURE_DATE")
+                (145, 162, "LAYOFF_CLOSURE_DATE")
             ]
         }
+    ),
+    # === WA TRAINING DATA ===#
+    (
+        "Company: Q2 Solutions Location: Seattle Layoff Start Date: 6/15/2023 # of Workers: 43 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 4/3/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Microsoft Location: Redmond and Bellevue Layoff Start Date: 5/26/2023 # of Workers: 559 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/27/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Aspiration Partners, Inc Location: King and Snohomish Counties Layoff Start Date: 5/26/2023 # of Workers: 3 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/24/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Walmart Location: Everett Layoff Start Date: 6/30/2023 # of Workers: 198 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 3/23/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Blue Nile, Inc. Location: Seattle Layoff Start Date: 7/14/2023 # of Workers: 119 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 3/23/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Ace Hardware Corporation Location: Spokane Layoff Start Date: 5/17/2023 # of Workers: 86 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/17/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Astound Broadband Location: Bothell Layoff Start Date: 5/19/2023 # of Workers: 90 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/17/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Compass Group USA, Inc. Location: Redmond Layoff Start Date: 3/24/2023 # of Workers: 68 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/8/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Ingersoll Rand Location: Kent Layoff Start Date: 5/8/2023 # of Workers: 69 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 3/7/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Microsoft Location: Redmond, Bellevue, Issaquah Layoff Start Date: 5/5/2023 # of Workers: 689 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/6/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Novo Nordisk Research Center Seattle, Inc Location: Seattle Layoff Start Date: 5/1/2023 # of Workers: 86 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 3/1/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: FleetLogix, Inc Location: SeaTac, Tukwila Layoff Start Date: 4/28/2023 # of Workers: 120 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 2/28/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Rume Medical Group Location: Seattle, Lynden Layoff Start Date: 2/26/2023 # of Workers: 2 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 2/24/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: American Medical Response, Pierce County Location: Fife Layoff Start Date: 4/19/2023 # of Workers: 43 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 2/17/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Critical Ideas, Inc. dba Chipper Cash Location: Vancouver, Spokane Layoff Start Date: 2/17/2023 # of Workers: 2 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 2/16/2023 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Staples Location: Auburn Layoff Start Date: 11/17/2014 # of Workers: 50 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 9/17/2014 State: WA",
+        {
+            
+        }
+    ),
+    (
+        "Company: Microsoft Location: Redmond Layoff Start Date: 11/17/2014 # of Workers: 747 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 9/18/2014 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Nordstrom Location: Vancouver Layoff Start Date: 1/10/2015 # of Workers: 142 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 10/31/2014 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Avamere Georgian House of Lakewood Location: Lakewood WA Layoff Start Date: 1/16/2015 # of Workers: 69 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 11/12/2014 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Bradken Foundry Location: Chehalis Layoff Start Date: 3/16/2015 # of Workers: 89 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 1/15/2015 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Great American Casino Location: Kent Layoff Start Date: 3/15/2015 # of Workers: 93 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 1/26/2015 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Lionbridge Location: Vancouver Layoff Start Date: 6/10/2018 # of Workers: 119 Closure Layoff: Layoff Type of Layoff: Permanent Received Date: 4/6/2018 State: WA",
+        {
+    
+        }
+    ),
+    (
+        "Company: Skagit Bank Location: Burlington Layoff Start Date: 3/1/2019 # of Workers: 60 Closure Layoff: Closure Type of Layoff: Permanent Received Date: 1/22/2019 State: WA",
+        {
+    
+        }
+    ),
+    # === CA TRAINING DATA === #
+    (
+        ""
     )
 ]
