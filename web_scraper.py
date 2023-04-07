@@ -10,6 +10,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 import pdfplumber
 from io import BytesIO
+import openpyxl
+import re
 
 
 def write_json_file(results_arr):
@@ -19,7 +21,31 @@ def write_json_file(results_arr):
     with open("results.json", "w") as json_file:
         json.dump(output, json_file)
 
-def scrape_web_tn(url="https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html"):
+
+def scrape_web_KY(url="https://kcc.ky.gov/Pages/News.aspx"):
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    xlsx_link = None
+    for link in soup.find_all('a', href=True):
+        if re.search(r'\.xlsx$', link['href']):
+            xlsx_link = link['href']
+
+    if xlsx_link:
+        # download the XLSX file using requests
+        response = requests.get(xlsx_link)
+        xlsx_file = BytesIO(response.content)
+
+        # read the content of the XLSX file using openpyxl
+        workbook = openpyxl.load_workbook(xlsx_file)
+        worksheet = workbook.active
+
+        # iterate through the rows and print the content
+        for row in worksheet.iter_rows(values_only=True):
+            print(row)
+
+
+def scrape_web_TN(url="https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html"):
     print("Grabbing TN web results...")
     response = requests.get(url)
     html = response.content
@@ -84,15 +110,16 @@ def scrape_web_WA(url="https://fortress.wa.gov/esd/file/warn/Public/SearchWARN.a
 
 
 def scrape_web_CA(url="https://edd.ca.gov/en/Jobs_and_Training/Layoff_Services_WARN"):
-    driver = webdriver.Chrome()
-    driver.get(url)
+    # driver = webdriver.Chrome()
+    # driver.get(url)
 
-    time.sleep(5)
-    html = driver.page_source
-    driver.quit()
+    # time.sleep(5)
+    # html = driver.page_source
+    # driver.quit()
 
-    soup = BeautifulSoup(html, 'html.parser')
-    pdf_link = soup.find("a", href=lambda href: href and href.endswith(".pdf"))["href"]
+    # soup = BeautifulSoup(html, 'html.parser')
+    # pdf_link = soup.find("a", href=lambda href: href and href.endswith(".pdf"))["href"]
+    pdf_link = "https://edd.ca.gov/siteassets/files/jobs_and_training/pubs/warn-report-for-7-1-2021-to-06-30-2022.pdf"
     
     # download the pdf file
     pdf_response = requests.get(pdf_link)
@@ -101,5 +128,6 @@ def scrape_web_CA(url="https://edd.ca.gov/en/Jobs_and_Training/Layoff_Services_W
     # process the PDF using pdfplumber
     with pdfplumber.open(pdf_file) as pdf:
         for page in pdf.pages:
-            text = page.extract_text()
-            print(text)
+            table=page.extract_table()
+            for row in table:
+                print(f"Notice Date: {row[0]}, Effective Date: {row[2]}, Company: {row[3]}, Affected Workers: {row[5]}, {row[4]}")

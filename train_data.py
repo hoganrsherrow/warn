@@ -309,6 +309,129 @@ TRAIN_DATA = [
     ),
     # === CA TRAINING DATA === #
     (
-        ""
+        "Notice Date: 06/02/2022, Effective Date: 08/08/2022, Company: Silgan Containers, Affected Workers: 80, Stanislaus County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 06/21/2022, Effective Date: 08/22/2022, Company: Yanka Industries, Inc. dba MasterClass, Affected Workers: 95, San Francisco County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 06/15/2022, Effective Date: 08/15/2022, Company: Azusa Pacific University, Affected Workers: 29, Los Angeles County",
+        {
+            
+        }
+    ),
+    (
+        "Notice Date: 05/24/2022, Effective Date: 07/25/2022, Company: Illume Ag HR, Inc., Affected Workers: 186, Riverside County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 06/02/2022, Effective Date: 07/04/2022, Company: Wells Fargo, Affected Workers: 1, San Bernardino County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 05/02/2022, Effective Date: 06/17/2022, Company: Blend Labs, Inc., Affected Workers: 89, Orange County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 04/29/2022, Effective Date: 06/30/2022, Company: Morrison Healthcare at Kaiser Permanente-Walnut Creek, Affected Workers: 5, Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 04/29/2022, Effective Date: 05/06/2022, Company: Whole Foods Market, Affected Workers: 117, Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 04/25/2022, Effective Date: 08/31/2022, Company: Marymount California University, Affected Workers: 131, Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 12/17/2021, Effective Date: 02/15/2022, Company: Med-Legal, LLC, Affected Workers: 113, Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 11/16/2021, Effective Date: 01/28/2022, Company: TE Connectivity, Affected Workers: 31, Santa Clara County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 10/05/2021, Effective Date: 12/03/2021, Company: Safran Cabin Inc., Affected Workers: 93, San Bernardino County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 08/27/2021, Effective Date: 10/31/2021, Company: State Farm Mutual Automobile Insurance Company, Affected Workers: 230, Kern County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 08/16/2021, Effective Date: 09/25/2021, Company: Chick-fil-A, Inc., Affected Workers: 110, San Bernardino County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 05/17/2022, Effective Date: 04/28/2022, Company: Netflix, Inc., Affected Workers: 106, County: Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 03/04/2022, Effective Date: 05/06/2022, Company: Nestle USA, Inc, Affected Workers: 104, County: Monterey County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 02/15/2022, Effective Date: 05/20/2022, Company: Walmart, Affected Workers: 105, County: Orange County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 01/27/2022, Effective Date: 04/01/2022, Company: Herbalife International of America, Inc., Affected Workers: 3, County: Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 01/27/2022, Effective Date: 03/31/2022, Company: Davidson Hotel Company LLC dba Pivot Hotels and resorts at Bei Hotel San Francisco, Affected Workers: 110, County: San Francisco County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 01/27/2022, Effective Date: 03/28/2022, Company: Beachbody LLC, Affected Workers: 70, County: Los Angeles County",
+        {
+    
+        }
+    ),
+    (
+        "Notice Date: 12/16/2021, Effective Date: 03/02/2022, Company: Wyndham Hotels & Resorts dba La Quinta Thousand Oaks-Newbury Park with L.Q. Management LLC, Affected Workers: 19, County: Ventura County",
+        {
+    
+        }
     )
 ]
