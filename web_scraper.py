@@ -10,8 +10,7 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 import pdfplumber
 from io import BytesIO
-import openpyxl
-import re
+import pandas as pd
 
 
 def write_json_file(results_arr):
@@ -23,26 +22,21 @@ def write_json_file(results_arr):
 
 
 def scrape_web_KY(url="https://kcc.ky.gov/Pages/News.aspx"):
-    response = requests.get(url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+    }
+    response = requests.get(url, headers=headers)
+    
+    
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
 
-    xlsx_link = None
-    for link in soup.find_all('a', href=True):
-        if re.search(r'\.xlsx$', link['href']):
-            xlsx_link = link['href']
+        a_tags = soup.find_all('a')
 
-    if xlsx_link:
-        # download the XLSX file using requests
-        response = requests.get(xlsx_link)
-        xlsx_file = BytesIO(response.content)
-
-        # read the content of the XLSX file using openpyxl
-        workbook = openpyxl.load_workbook(xlsx_file)
-        worksheet = workbook.active
-
-        # iterate through the rows and print the content
-        for row in worksheet.iter_rows(values_only=True):
-            print(row)
+        for a_tag in a_tags:
+            print(a_tag)
+    else:
+        print(f"Failed to fetch the webpage. Status code: {response.status_code}, Reason: {response.reason}")
 
 
 def scrape_web_TN(url="https://www.tn.gov/workforce/general-resources/major-publications0/major-publications-redirect/reports.html"):
