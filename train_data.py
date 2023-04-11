@@ -433,5 +433,41 @@ TRAIN_DATA = [
         {
     
         }
+    ),
+    (
+        "Date Received: 2015-12-29 00:00:00, Workforce Area: Kentuckianaworks, County: Jefferson, Company Name: Kentucky Association of Electric Cooperatives, Inc. (KAEC), NAICS: 335311, Employees: 94, Closure/Layoff: Layoff, Projected Dates: 2016-02-28 00:00:00, Trade: No, Union: Yes,",
+        {
+    
+        }
+    ),
+    (
+        "Date Received: 2015-12-02 00:00:00, Workforce Area: Green River, County: Hancock, Company Name: Century Aluminum of Kentucky                           (EXTENSION OF CONDITIONAL WARN), NAICS: 331313, Employees: 225, Closure/Layoff: Layoff, Projected Dates: 2015-12-02 00:00:00, Trade: TBD, Union: Yes,",
+        {
+    
+        }
+    ),
+    (
+        "Date Received: 2015-11-06 00:00:00, Workforce Area: Green River, County: Webster, Company Name: Sebree Mining LLC, NAICS: 212111, Employees: 140, Closure/Layoff: Closure, Projected Dates: 2016-01-06 00:00:00, Trade: No, Union: No,",
+        {
+    
+        }
+    ),
+    (
+        "Date Received: 2015-11-04 00:00:00, Workforce Area: Cumberlands, County: Adair,Metcalf,Russell, Company Name: Adair County Hospital District-Westlake Regional Hospital, NAICS: 622110, Employees: 153, Closure/Layoff: Closure, Projected Dates: 2016-01-04 00:00:00, Trade: No, Union: No,",
+        {
+    
+        }
+    ),
+    (
+        "Date Received: 2023-02-27 00:00:00, Region: South Central, County: Warren, Company Name: WestRock, NAICS Code: 322211, Employees: 76, Closure or Layoff?: Closure, Projected Date: 2023-04-17 00:00:00, Trade: , Notice URL: https://kydev.my.salesforce.com/sfc/p/t00000004X3h/a/8y000004CMk3/XfuD3oxmgbQhY_HpkXVYxHZ7ea2jsmG_4sST_XMTwpY, Notice Link: =IF(ISBLANK(J2),'',HYPERLINK(J2,'WARN')),",
+        {
+    
+        }
+    ),
+    (
+        "Date Received: 2023-01-30 00:00:00, Region: Northern Kentucky, County: Grant, Company Name: Napoleon (formally Wolf Steel USA), NAICS Code: 332999, Employees: 90, Closure or Layoff?: Layoff, Projected Date: 2023-01-23 00:00:00, Trade: , Notice URL: https://kydev.my.salesforce.com/sfc/p/t00000004X3h/a/8y0000045SE1/2uPCKpFMDlBo2R8gKUug_VY.td9eJhXCK._MgkUfzGs, Notice Link: =IF(ISBLANK(J3),'',HYPERLINK(J3,'WARN')),",
+        {
+    
+        }
     )
 ]

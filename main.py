@@ -6,7 +6,7 @@ url = "https://www.tn.gov/workforce/general-resources/major-publications0/major-
 
 # findings = web_scraper.scrape_web_TN(url=url)
 # print(web_scraper.scrape_web_WA())
-web_scraper.scrape_web_KY()
+web_scraper.scrape_web_tx()
 
 
 # This WORKS

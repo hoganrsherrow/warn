@@ -10,7 +10,8 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 import pdfplumber
 from io import BytesIO
-import pandas as pd
+import openpyxl
+from urllib.parse import urljoin
 
 
 def write_json_file(results_arr):
@@ -21,20 +22,66 @@ def write_json_file(results_arr):
         json.dump(output, json_file)
 
 
+def scrape_web_tx(url="https://www.twc.texas.gov/businesses/worker-adjustment-and-retraining-notification-warn-notices"):
+    driver = webdriver.Chrome()
+
+    # Open the URL
+    driver.get(url)
+
+    # Wait for the page to load
+    wait = WebDriverWait(driver, 10)
+
+    # Find all the links on the page
+    links = wait.until(EC.presence_of_all_elements_located((By.XPATH, "//a[contains(@href, '.xlsx')]")))
+
+    # Download all .xlsx files
+    for link in links:
+        response = requests.get(link.get_attribute('href'))
+
+        workbook = openpyxl.load_workbook(BytesIO(response.content))
+        sheet = workbook.active
+        col_headers = [cell.value for cell in sheet[1]]
+
+        print(f"Contents of {link}:")
+        for row in sheet.iter_rows(min_row=2, values_only=True):
+            row_str = ""
+            for header, value in zip(col_headers, row):
+                row_str += f"{header}: {value}, "
+            print(row_str)
+        print()
+
+
+    # Close the browser
+    driver.quit()
+
 def scrape_web_KY(url="https://kcc.ky.gov/Pages/News.aspx"):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
     }
     response = requests.get(url, headers=headers)
+    base_url = "https://kcc.ky.gov"
     
     
     if response.status_code == 200:
         soup = BeautifulSoup(response.content, 'html.parser')
 
-        a_tags = soup.find_all('a')
+        xlsx_links = [urljoin(base_url, a['href']) for a in soup.find_all('a', href=True) if a ['href'].endswith('.xlsx')]
 
-        for a_tag in a_tags:
-            print(a_tag)
+        for xlsx_link in xlsx_links:
+            response = requests.get(xlsx_link, headers=headers)
+
+            workbook = openpyxl.load_workbook(BytesIO(response.content))
+
+            sheet = workbook.active
+            col_headers = [cell.value for cell in sheet[1]]
+
+            print(f"Contents of {xlsx_link}:")
+            for row in sheet.iter_rows(min_row=2, values_only=True):
+                row_str = ""
+                for header, value in zip(col_headers, row):
+                    row_str += f"{header}: {value}, "
+                print(row_str)
+            print()
     else:
         print(f"Failed to fetch the webpage. Status code: {response.status_code}, Reason: {response.reason}")
 
