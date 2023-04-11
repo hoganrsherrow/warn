@@ -469,5 +469,71 @@ TRAIN_DATA = [
         {
     
         }
+    ),
+    (
+        "NOTICE_DATE: 2020-01-03 00:00:00, JOB_SITE_NAME: Fleetwood Transportation Services, Inc.& Fleetwood Logistics, COUNTY_NAME: Angelina, WDA_NAME: Deep East Texas WDA, TOTAL_LAYOFF_NUMBER: 49, LayOff_Date: 2019-12-31 00:00:00, WFDD_RECEIVED_DATE: 2020-01-03 00:00:00, CITY_NAME: Burke, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-01-06 00:00:00, JOB_SITE_NAME: Valerus Field Solutions, LP, COUNTY_NAME: Austin, WDA_NAME: Gulf Coast WDA, TOTAL_LAYOFF_NUMBER: 250, LayOff_Date: 2020-03-07 00:00:00, WFDD_RECEIVED_DATE: 2020-01-07 00:00:00, CITY_NAME: Sealy, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-01-06 00:00:00, JOB_SITE_NAME: Apache Corp-San Antonio, COUNTY_NAME: Bexar, WDA_NAME: Alamo WDA, TOTAL_LAYOFF_NUMBER: 272, LayOff_Date: 2020-03-06 00:00:00, WFDD_RECEIVED_DATE: 2020-01-06 00:00:00, CITY_NAME: San Antonio, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-01-08 00:00:00, JOB_SITE_NAME: Triumph Hospital - The Heights, COUNTY_NAME: Harris, WDA_NAME: Gulf Coast WDA, TOTAL_LAYOFF_NUMBER: 138, LayOff_Date: 2020-03-08 00:00:00, WFDD_RECEIVED_DATE: 2020-01-08 00:00:00, CITY_NAME: Houston, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-20 00:00:00, JOB_SITE_NAME: Benchmark Hospitality of Corpus Christi, COUNTY_NAME: Nueces, WDA_NAME: Coastal Bend WDA, TOTAL_LAYOFF_NUMBER: 115, LayOff_Date: 2020-03-21 00:00:00, WFDD_RECEIVED_DATE: 2020-03-25 00:00:00, CITY_NAME: Corpus Ch, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-20 00:00:00, JOB_SITE_NAME: SA Burger, COUNTY_NAME: Hays, WDA_NAME: Rural Capital WDA, TOTAL_LAYOFF_NUMBER: 5, LayOff_Date: 2020-03-20 00:00:00, WFDD_RECEIVED_DATE: 2020-03-25 00:00:00, CITY_NAME: San Marcos, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-20 00:00:00, JOB_SITE_NAME: Sport Clips, COUNTY_NAME: Williamson, WDA_NAME: Rural Capital WDA, TOTAL_LAYOFF_NUMBER: 66, LayOff_Date: 2020-03-23 00:00:00, WFDD_RECEIVED_DATE: 2020-03-25 00:00:00, CITY_NAME: Georgetown, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-23 00:00:00, JOB_SITE_NAME: Hooters - NASA Rd., COUNTY_NAME: Harris, WDA_NAME: Gulf Coast WDA, TOTAL_LAYOFF_NUMBER: 44, LayOff_Date: 2020-03-16 00:00:00, WFDD_RECEIVED_DATE: 2020-04-14 00:00:00, CITY_NAME: Seabrook, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-23 00:00:00, JOB_SITE_NAME: Hooters - Gulf Fwy, COUNTY_NAME: Harris, WDA_NAME: Gulf Coast WDA, TOTAL_LAYOFF_NUMBER: 46, LayOff_Date: 2020-03-16 00:00:00, WFDD_RECEIVED_DATE: 2020-04-14 00:00:00, CITY_NAME: Webster, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-23 00:00:00, JOB_SITE_NAME: Hooters - Jack Kultgen Fwy, COUNTY_NAME: McLennan, WDA_NAME: Heart of Texas WDA, TOTAL_LAYOFF_NUMBER: 36, LayOff_Date: 2020-03-16 00:00:00, WFDD_RECEIVED_DATE: 2020-04-14 00:00:00, CITY_NAME: Waco, None: None,",
+        {
+    
+        }
+    ),
+    (
+        "NOTICE_DATE: 2020-03-23 00:00:00, JOB_SITE_NAME: Take 5 Department 233, COUNTY_NAME: Brazoria, WDA_NAME: Gulf Coast WDA, TOTAL_LAYOFF_NUMBER: 6, LayOff_Date: 2020-03-22 00:00:00, WFDD_RECEIVED_DATE: 2020-04-08 00:00:00, CITY_NAME: Pearland, None: None,",
+        {
+    
+        }
     )
 ]
