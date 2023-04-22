@@ -21,7 +21,8 @@ def scrape_table(driver):
 
     return data
 
-def scrape_web_az(url="https://www.azjobconnection.gov/search/warn_lookups/new"):
+def scrape_web_de(url="https://joblink.delaware.gov/search/warn_lookups/new"):
+    print("Grabbing DE web results...")
     # Create a new instance of the Firefox driver
     driver = webdriver.Chrome()
 
